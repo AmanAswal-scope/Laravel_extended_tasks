@@ -1,0 +1,42 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use packages\BM\books\src\Http\Controllers\BooksController;
+use packages\BM\books\src\Models\Books;
+
+class extended_custom_controller extends BooksController
+{
+ 
+    public function store(Request $request)
+    {
+        $request->validate([
+            'author' => 'required',
+            'description' => 'required',
+            'publication_date' => 'required',
+            'language' => 'required',
+            'publisher' => 'required',
+            'stock_quantity' => 'required',
+        ]);
+        $book = new Books;
+        $book->author = $request->author;
+        $book->description = $request->description;
+        $book->publication_date = $request->publication_date;
+        $book->language = $request->language;
+        $book->publisher = $request->publisher;
+        $book->stock_quantity = $request->stock_quantity;
+        $book->save();
+       // return redirect(route('admin.books'));
+    }
+}
+
+
+
+
+
+
+
+
+
+

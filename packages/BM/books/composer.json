@@ -1,0 +1,12 @@
+{
+    "name": "bm/books-manage",
+    "description": "Books management",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BM\\Books\\BooksServiceProvider"
+            ]
+        }
+    }
+}
