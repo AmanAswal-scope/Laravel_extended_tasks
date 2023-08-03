@@ -1,0 +1,9 @@
+So the current task that was assigned to me was to extend the custom package that I have created ,So there are multiple things to do such as:
+1:To add extra column in the book section but this time  need to make changes in app directory to add migration and not in the custom package.
+So that thing is done successfully able to extend the package and add migration to it.
+
+2: The next thing is to create a controller as well as view for extra added field in book section and that is also completed. I have craeted a another controller for it, which basically handle all the edit delete and create features.
+
+3: Third I need to save the database record in a csv file format and create a controller and route to basically download and save the records in the csv file. This is also get completed.
+
+4: At last  we need to read that file and display data in browser so I have craeted a route for it so as soon we enter that specific route It will read that particular data and give us the output in the browser. 
